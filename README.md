@@ -17,7 +17,7 @@ Show help
 
 ## Demo
 
-![output](https://user-images.githubusercontent.com/3116399/122834551-7664ba80-d2f7-11eb-8dc2-61040e94ba00.gif)
+![output](https://user-images.githubusercontent.com/3116399/122836368-cc872d00-d2fa-11eb-8f44-9dbd32262b7e.gif)
 
 ## Development
 
