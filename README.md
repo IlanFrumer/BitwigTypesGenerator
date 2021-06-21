@@ -1,5 +1,5 @@
 # BitwigTypesGenerator
-Auto Generated Types for [Bitwig](https://www.bitwig.com/) scripting API
+Auto Generated Typescript types for [Bitwig](https://www.bitwig.com/) scripting API
 
 ## How to Generate ?
 

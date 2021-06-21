@@ -1,3 +1,11 @@
+export const Header = `
+  // This file is Auto generated 
+  // Type definitions for Bitwig Studio's Control Surface API
+  // Project: https://bitwig.com
+  // Definitions by: Ilan Frumer <https://github.com/IlanFrumer>
+
+`;
+
 export const javaPolyfills = `
     type int = number
     type float = number
@@ -91,10 +99,11 @@ export const globalTypes = `
     repeat(n: number, d: string): string;
   }
 
-  // api_v1.js
   export const println: Bitwig.ControllerHost['println'];
+  export const errorln: Bitwig.ControllerHost['errorln'];
   
   // expose globals
   export const host: Bitwig.ControllerHost;
+  export const load: Bitwig.ControllerHost['load'];
   export const loadAPI: Bitwig.ControllerHost['loadAPI'];
 `;

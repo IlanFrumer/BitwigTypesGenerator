@@ -13,7 +13,7 @@ import {
   parseTitle,
   wrapDesc,
 } from "./utils.js";
-import { globalTypes, javaPolyfills } from "./global.js";
+import { globalTypes, Header, javaPolyfills } from "./global.js";
 
 export class BitwigApi {
   /**
@@ -40,7 +40,7 @@ export class BitwigApi {
   }
 
   async generate() {
-    let body = "";
+    let body = Header;
     body += "declare global {";
     body += "namespace Bitwig {";
     body += javaPolyfills;
