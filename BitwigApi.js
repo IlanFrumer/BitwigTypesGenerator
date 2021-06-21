@@ -197,6 +197,7 @@ export class BitwigApi {
               desc: wrapDesc(desc, since, deprecated),
             });
             break;
+          case "dynheader":
           case "dynheader closed":
           case "dynsummary":
           case undefined:

@@ -35,6 +35,7 @@ export async function generate(beta, version) {
     );
     file = `bitwig-v${version}.d.ts`;
   }
+  if (beta) file = file.replace("bitwig", "bitwig-beta");
 
   const target = path.resolve(homedir, folder, file);
   await fs.writeFile(target, body);
