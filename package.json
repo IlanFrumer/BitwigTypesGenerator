@@ -1,6 +1,6 @@
 {
   "name": "bitwig-types-generator",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Generated Types for Bitwig scripting API",
   "main": "./bin/generate.js",
   "type": "module",

@@ -147,7 +147,7 @@ export function wrapDesc(desc, since = null, deprecated = null) {
       .replace(/\.\s/g, ". @@@@@")
       .split("@@@@@")
       .forEach((l) => lines.push(l));
-  if (since) lines.push("@version " + since);
+  if (since) lines.push("@since " + since);
   if (deprecated) lines.push("@deprecated " + deprecated);
   if (lines.length) {
     return `
