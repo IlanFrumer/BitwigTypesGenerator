@@ -1,1 +1,4 @@
 node_modules/
+dist/
+old_source/
+old_js/
