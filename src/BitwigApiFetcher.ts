@@ -51,5 +51,6 @@ export class BitwigApiFetcher {
       parser: "babel-ts",
     });
     await fs.writeFile(filepath, ts);
+    return filepath;
   }
 }
