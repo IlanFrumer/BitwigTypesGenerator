@@ -11,6 +11,6 @@ const argv = yargs(hideBin(process.argv)).strict().option("beta", {
 });
 
 generate({ beta: argv.beta }).then((target) => {
-  console.log("Bitwig API has generated successfully!!");
+  console.log("Bitwig API was generated successfully!!");
   console.log(`Types reference: ${target}`);
 });
