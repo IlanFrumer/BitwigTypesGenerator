@@ -5,13 +5,13 @@ Auto Generated Typescript types for [Bitwig](https://www.bitwig.com/) scripting 
 ## How to Generate ?
 
 Simply run
-`npx bitwig-type-generator`
+`npx bitwig-types-generator`
 
 Using bitwig studio beta version
-`npx bitwig-type-generator --beta`
+`npx bitwig-types-generator --beta`
 
 Show help
-`npx bitwig-type-generator --help`
+`npx bitwig-types-generator --help`
 
 ## Demo
 
