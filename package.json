@@ -1,6 +1,6 @@
 {
   "name": "bitwig-types-generator",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "Generated Types for Bitwig scripting API",
   "main": "./dist/main.js",
   "scripts": {
@@ -25,13 +25,13 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
-    "prettier": "^2.3.1",
+    "prettier": "^2.3.2",
     "which": "^2.0.2",
     "yargs": "^17.0.1"
   },
   "devDependencies": {
-    "@types/node": "^15.12.4",
-    "@types/prettier": "^2.3.0",
-    "@types/which": "^2.0.0"
+    "@types/node": "^16.0.0",
+    "@types/prettier": "^2.3.1",
+    "@types/which": "^2.0.1"
   }
 }

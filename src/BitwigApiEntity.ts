@@ -113,7 +113,7 @@ export abstract class BitwigApiEntity {
           for (const element of $$(el)
             .nextUntil(".groupheader,hr")
             .filter("a[id]")) {
-            const memitem = $$(element).siblings().filter(".memitem").first();
+            const memitem = $$(element).nextAll().filter(".memitem").first();
             const desc = Utils.parseDescription(
               memitem.find(".memdoc"),
               this.declaration.name

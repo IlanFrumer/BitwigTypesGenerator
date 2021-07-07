@@ -7,6 +7,7 @@ export type generateOptions = {
 };
 
 export async function generate({ beta }: generateOptions): Promise<string> {
+  console.log(beta);
   const fetcher = new BitwigApiFetcher(beta);
   const container = new BitwigApiContainer(fetcher);
   await container.fetch();
@@ -14,5 +15,3 @@ export async function generate({ beta }: generateOptions): Promise<string> {
   const target = await fetcher.save(types);
   return target;
 }
-
-generate({ beta: true });

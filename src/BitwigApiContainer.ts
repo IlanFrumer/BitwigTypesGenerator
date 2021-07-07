@@ -31,13 +31,15 @@ export class BitwigApiContainer {
 
   async fetch() {
     const $ = await this.fetcher.loadClasses();
-    for (const el of $(".classindex .el").toArray()) {
-      const href = $(el).attr("href")?.trim();
-      // if (el.nextSibling && !isText(el.nextSibling)) throw new Error('Bad class');
-      // const lib = el.nextSibling.nodeValue.trim();
-      if (href) {
-        await this.fetchEntity(href);
-      }
+    const classes = new Set(
+      $(".classindex .el")
+        .toArray()
+        .map((el) => $(el).attr("href")?.trim() ?? "")
+        .filter((d) => d !== "")
+    );
+
+    for (const href of classes) {
+      await this.fetchEntity(href);
     }
   }
 
@@ -45,8 +47,6 @@ export class BitwigApiContainer {
     let entity = this.entities.get(href);
     if (!entity) {
       const $ = await this.fetcher.load(href);
-      // const def = $(".headertitle").text().trim();
-      // const title = Utils.parseHeader(def);
       const [sourceHref, lineId] = $(".definition a.el:first-of-type")
         .attr("href")!
         .split("#");

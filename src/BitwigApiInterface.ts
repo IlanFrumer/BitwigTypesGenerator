@@ -1,8 +1,6 @@
-import { default as $, Element } from "cheerio";
 import { BitwigApiEntity, MemItem } from "./BitwigApiEntity";
 import * as Global from "./BitwigApiGlobal";
 import { BitwigApiMethod } from "./BitwigApiMethod";
-import { Utils } from "./Utils";
 
 const CALLBACK_REGEX = /^\w*Callback(\<\w+\>)?/;
 

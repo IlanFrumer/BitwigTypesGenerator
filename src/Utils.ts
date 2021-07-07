@@ -107,12 +107,13 @@ export abstract class Utils {
         case "version":
           lines.push(`@${dl.attribs.class} ${val}`);
           break;
+        case "exception":
         case "params":
           /**
            * @Todo
-           * add params docs
            */
           break;
+
         default:
           throw new Error(`Unkown section description: ${dl.attribs.class}`);
       }
